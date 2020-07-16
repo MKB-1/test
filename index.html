@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battles</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h3 class="center">Pokemon Battle Simulator</h3>
+    <div class=" grey lighten-1 container">
+        
+        <div class="row" style="padding-top: 1.5rem;">
+            <div class="col s10 offset-s1">
+                <div class="card large" id="simulation-container">
+                    <div id="friendly-hp" class="simulation-hitpoints">
+                        <div class="hp">77/77</div>
+                        <div class="hp-bar-container">
+                            <div id="friendly-hp-bar"></div>
+                        </div>
+                    </div>
+                    <div id="enemy-hp" class="simulation-hitpoints">
+                        <div class="hp">44/59</div>
+                        <div class="hp-bar-container">
+                            <div id="enemy-hp-bar"></div>
+                        </div>
+                    </div>
+                    <div id="friendly-pokemon-container" class="sprite-container">
+                        <img src="https://img.pokemondb.net/sprites/black-white/back-normal/blastoise.png" alt="MISSING SPRITE" class="pokemon-sprite">
+                    </div>
+                    <div id="enemy-pokemon-container" class="sprite-container">
+                        <img src="https://img.pokemondb.net/sprites/black-white/normal/nidoking.png" alt="MISSING SPRITE" class="pokemon-sprite">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s10 offset-s1">
+                <div id="game-options-container">
+                    
+                    <div class="pokemon-container" id="friendly">
+                        <!-- Choose Pokemon -->
+                            <!-- <input type="text" id="autocomplete-input" class="autocomplete">
+                            <label class="white-text" for="autocomplete-input">Friendly Pokemon</label> -->
+                            
+                        <div class="choose-moves" id="choose-friendly">
+                            <!-- Choose Move -->
+                            <div class="input-field move-input">
+                                <input type="text" placeholder="Random Move" id="autocomplete-input-1" class="autocomplete friendly-move">
+                            </div>
+                            
+                            <div class="input-field move-input">
+                                <input type="text" placeholder="Random Move" id="autocomplete-input-2" class="autocomplete friendly-move">
+                            </div>
+                            <div class="input-field move-input">
+                                <input type="text" placeholder="Random Move" id="autocomplete-input-3" class="autocomplete friendly-move">
+                            </div>
+                            <div class="input-field move-input">
+                                <input type="text" placeholder="Random Move" id="autocomplete-input-4" class="autocomplete friendly-move">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pokemon-container" id="enemy">
+                        <div class="choose-pokemon" id="choose-enemy">
+                            <div class="input-field pokemon-input">
+                                <input type="text" placeholder="Random Pokemon" id="autocomplete-input" class="autocomplete choose-pokemon-input">
+                                <label for="autocomplete-input">Enemy Pokemon</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fight">
+                        <a id="fight-btn" href="#" class="waves-effect waves-light btn">Fight!</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-bottom: 1rem;">
+
+        </div>
+    </div>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="loading-bar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
